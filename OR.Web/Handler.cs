@@ -41,6 +41,7 @@ namespace OR.Web
         {
             return new OperationResult.BadRequest() { ResponseResource = new SomeResponse { Value = "Some custom error response" } };
         }
+
         [HttpOperation(HttpMethod.POST, ForUriName = "post")]
         public OperationResult Post(SomeRequest request)
         {

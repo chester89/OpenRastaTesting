@@ -31,10 +31,10 @@ namespace OR.Web
                     .TranscodedBy<JsonCodec>();
 
                 ResourceSpace.Has.ResourcesOfType<SomeResponse>()
-               .AtUri("Get/WithParams?value={value}")
-               .Named("WithParams")
-               .HandledBy<Handler>()
-               .TranscodedBy<JsonCodec>();
+                   .AtUri("Get/WithParams?value={value}")
+                   .Named("WithParams")
+                   .HandledBy<Handler>()
+                   .TranscodedBy<JsonCodec>();
 
                 ResourceSpace.Has.ResourcesOfType<SomeResponse>()
                     .AtUri("Get/Error")
